@@ -21,7 +21,7 @@ todoHeaderForm.addEventListener('submit', (ev) => {
 
   let item = todoItemTemplate.cloneNode(true);
   $('.todo-item-text', item).textContent = value;
-  $('.todo-item-actions', item).addEventListener('click', (ev) => {
+  $('.todo-item-actions [data-action="delete"]', item).addEventListener('click', (ev) => {
     item.parentNode.removeChild(item);
   });
 
