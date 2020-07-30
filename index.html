@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Todo App</title>
+    <link rel='stylesheet' href='./style.css' />
+  </head>
+  <body>
+    <div class='root'>
+      <form class='todo-header'>
+        <input class='todo-header-input' placeholder='I want to do...' autofocus />
+        <button class='todo-header-button' type='submit'>add</button>
+      </form>
+      <ul class='todo-list'></ul>
+    </div>
+
+    <template class='todo-item'>
+      <li class='todo-item'>
+        <span class='todo-item-text'></span>
+        <div class='todo-item-actions'>
+          <button>delete</button>
+        </div>
+      </li>
+    </template>
+    <script src='./script.js' defer></script>
+  </body>
+</html>

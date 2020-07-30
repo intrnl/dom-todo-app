@@ -1,0 +1,27 @@
+.root {
+  min-height: 100vh;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+
+.todo-header {
+  display: flex;
+}
+
+.todo-header-input {
+  flex-grow: 1;
+}
+
+.todo-header-button {
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.todo-item + .todo-item {
+  margin-top: 8px;
+}
+
+.todo-item-actions {
+  margin-top: 4px;
+}
